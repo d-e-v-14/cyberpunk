@@ -1,4 +1,3 @@
-/* ═══════════ HERO ═══════════ */
 .cp-hero {
   display: flex;
   align-items: flex-start;
@@ -35,7 +34,10 @@
   font-weight: 400;
 }
 
-.cp-stats { display: flex; gap: 36px; }
+.cp-stats {
+  display: flex;
+  gap: 36px;
+}
 
 .cp-stat-val {
   font-family: 'Exo 2', sans-serif;

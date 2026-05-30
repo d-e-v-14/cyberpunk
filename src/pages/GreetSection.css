@@ -1,4 +1,3 @@
-/* ═══════════ GREET ═══════════ */
 .cp-greet {
   display: flex;
   align-items: center;
@@ -9,7 +8,9 @@
   overflow: hidden;
 }
 
-.cp-greet-left { flex: 1; }
+.cp-greet-left {
+  flex: 1;
+}
 
 .cp-greet-h2 {
   font-family: 'Exo 2', sans-serif;
@@ -30,20 +31,23 @@
   font-weight: 400;
 }
 
-.cp-greet-right { flex: 0 0 252px; }
+.cp-greet-right {
+  flex: 0 0 252px;
+}
 
 /* ── GLASS MENU BOX ── */
 .cp-menu-glass {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255,100,0,0.3);
+  border: 1px solid rgba(255, 100, 0, 0.3);
   border-radius: 8px;
   padding: 24px 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .cp-menu-item {
   display: flex;
   align-items: center;
@@ -51,17 +55,21 @@
   padding: 10px 14px;
   cursor: pointer;
 }
-.cp-menu-dot { 
-  width: 8px; 
-  height: 8px; 
-  flex-shrink: 0; 
+
+.cp-menu-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
 }
+
 .cp-menu-item:nth-child(odd) .cp-menu-dot {
   background: #ffaa00;
 }
+
 .cp-menu-item:nth-child(even) .cp-menu-dot {
   background: #dd1100;
 }
+
 .cp-menu-label {
   font-family: 'Exo 2', sans-serif;
   font-size: 14px;
@@ -70,4 +78,9 @@
   flex: 1;
   letter-spacing: 0.5px;
 }
-.cp-menu-arrow { color: #fff; font-size: 16px; font-weight: 400; }
+
+.cp-menu-arrow {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}

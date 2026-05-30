@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@400;500;600;700;800;900&display=swap');
 
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* ── PAGE CONTAINER ── */
+
 .cp-page {
   background: #080808;
   color: #fff;
@@ -12,7 +18,7 @@
   position: relative;
 }
 
-/* ── GRADIENT TEXT ── */
+
 .grad {
   background: linear-gradient(160deg, #cc1100 0%, #ff6600 55%, #ffaa00 100%);
   -webkit-background-clip: text;
@@ -20,7 +26,7 @@
   background-clip: text;
 }
 
-/* ── GRADIENT BORDER WRAPPER ── */
+
 .cp-gradient-border {
   position: relative;
   margin: 24px 12vw;
@@ -28,16 +34,18 @@
   background: linear-gradient(160deg, #cc1100 0%, #ff6600 35%, #ffaa00 65%, #ff6600 100%);
   border-radius: 2px;
 }
+
 .cp-gradient-border-inner {
   background: #080808;
   border-radius: 1px;
 }
 
-/* ── DIVIDERS ── */
+
 .cp-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, #282828 25%, #282828 75%, transparent 100%);
 }
+
 .cp-gradient-divider {
   height: 1px;
   background: linear-gradient(90deg, #cc1100 0%, #ff6600 35%, #ffaa00 65%, #ff6600 100%);
