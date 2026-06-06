@@ -1,9 +1,10 @@
 import React from 'react';
+import heroImg from '../assets/hero.png';
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col md:flex-row items-start justify-between p-5 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden min-h-[420px]">
-      <div className="flex-1 md:pr-8 pt-2">
+    <section className="flex flex-col md:flex-row items-center justify-between p-5 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden min-h-[500px]">
+      <div className="flex-1 md:pr-8 z-10">
         <h1 className="font-exo text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4 sm:mb-6 tracking-tight">
           Where <span className="text-gradient-neon">Neon Dreams<br />&amp; Digital Nightmares</span><br />
           Converge.
@@ -29,7 +30,9 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-2/5 lg:w-1/3 h-48 sm:h-64 md:h-80 flex-none mt-8 sm:mt-10 md:mt-0" />
+      <div className="w-full md:w-1/2 lg:w-5/12 flex-none mt-8 sm:mt-10 md:mt-0 flex justify-center md:justify-end md:absolute md:right-0 md:bottom-0">
+        <img src={heroImg} alt="Cyberpunk Character" className="w-full max-w-sm md:max-w-none md:w-[120%] lg:w-[130%] h-auto object-contain mix-blend-lighten md:-translate-x-4 lg:translate-x-8" />
+      </div>
     </section>
   );
 }
