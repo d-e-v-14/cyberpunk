@@ -33,10 +33,11 @@ function Hero() {
             Read More
           </button>
 
-          <button className=" px-5 py-2 btn2">
-            Learn More
-          </button>
-    
+          <div className="inline-block p-[1.5px] bg-[linear-gradient(90deg,#ff4d00_0%,#ff7b00_45%,#ffd60a_100%)] hover:-translate-y-[2px] hover:scale-105 transition-all duration-300">
+            <button className="bg-black px-5 py-2 text-[#ff8c00] text-[18px] hover:text-white transition-all duration-300">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </section>
