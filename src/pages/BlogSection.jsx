@@ -7,9 +7,7 @@ import undergroundImg from '../assets/underground.png';
 import chromeImg from '../assets/chrome.png';
 import aiWarImg from '../assets/ai_war.png';
 
-// ---------------------------------------------------------------------------
-// Data
-// ---------------------------------------------------------------------------
+
 const POSTS = [
   {
     id: 1,
@@ -125,9 +123,7 @@ const RECENT_POSTS = POSTS.slice(0, 5).map(p => ({ id: p.id, title: p.titlePlain
 
 const TOPICS = ["General", "Lore", "Tech", "Art", "Underground"];
 
-// ---------------------------------------------------------------------------
-// Sidebar
-// ---------------------------------------------------------------------------
+
 
 function Sidebar({ activeTopic, onTopicChange }) {
   return (
@@ -162,11 +158,10 @@ function Sidebar({ activeTopic, onTopicChange }) {
             <li key={topic}>
               <button
                 onClick={() => onTopicChange(topic)}
-                className={`w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${
-                  activeTopic === topic
+                className={`w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${activeTopic === topic
                     ? "bg-white/10 font-medium text-white"
                     : "text-zinc-400 hover:text-white"
-                }`}
+                  }`}
               >
                 {topic}
               </button>
@@ -178,9 +173,6 @@ function Sidebar({ activeTopic, onTopicChange }) {
   );
 }
 
-// ---------------------------------------------------------------------------
-// Post row
-// ---------------------------------------------------------------------------
 
 function PostRow({ post }) {
   return (
@@ -221,9 +213,6 @@ function PostRow({ post }) {
   );
 }
 
-// ---------------------------------------------------------------------------
-// Main section
-// ---------------------------------------------------------------------------
 
 export default function CyberBlog({ onBack }) {
   const [activeTopic, setActiveTopic] = useState("Lore");
@@ -236,7 +225,7 @@ export default function CyberBlog({ onBack }) {
     <div className="w-full min-h-screen bg-black relative">
       {onBack && (
         <div className="absolute top-4 left-4 sm:top-6 sm:left-8 z-50">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center gap-2 px-6 py-2 bg-red-600/10 border border-red-600 text-red-500 font-exo font-bold uppercase tracking-widest text-sm hover:bg-red-600 hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(255,0,0,0.3)] hover:shadow-[0_0_25px_rgba(255,0,0,0.6)] cursor-pointer"
           >
