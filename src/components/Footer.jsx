@@ -1,4 +1,6 @@
-function Footer() {
+import { Link } from "react-router-dom";
+
+function Footer({ setShowCookies }) {
 
     return(
         <footer className="bg-black text-white font-sans px-5 sm:px-10 lg:px-20 py-16 w-full">
@@ -44,8 +46,8 @@ function Footer() {
                 </div>
                 <div className="flex gap-6 flex-wrap">
                     <a href="#" className="hover:text-orange-500">Terms</a>
-                    <a href="#" className="hover:text-orange-500">Privacy</a>
-                    <a href="#" className="hover:text-orange-500">Cookies</a>
+                    <Link to="/privacy" target="_blank" className="hover:text-orange-500 transition">Privacy</Link>
+                    <button onClick={() => setShowCookies(true)}className="hover:text-orange-500 transition">Cookies</button>
                 </div>
                 
                 
