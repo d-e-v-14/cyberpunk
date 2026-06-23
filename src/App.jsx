@@ -13,7 +13,6 @@ function Home() {
       <GreetSection />
       <UnveilSection />
       <DiveSection />
-      <BlogSection />
     </div>
   );
 }
@@ -34,6 +33,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogSection />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>

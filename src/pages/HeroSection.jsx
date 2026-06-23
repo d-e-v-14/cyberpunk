@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import heroImg from '../assets/hero.png';
 
 export default function HeroSection() {
@@ -29,6 +29,19 @@ export default function HeroSection() {
             <span className="font-rajdhani text-xs md:text-sm text-[#bcbaba] uppercase tracking-wider mt-1 block font-medium">Art and Design</span>
           </div>
         </div>
+        <Link
+          to="/blog"
+          className="inline-flex items-center gap-3 mt-10 sm:mt-12 px-8 py-3.5 font-exo font-bold uppercase tracking-[0.15em] text-sm
+            bg-gradient-to-r from-[#ff6600] to-[#ffaa00] text-black rounded-sm
+            shadow-[0_0_20px_rgba(255,102,0,0.4)] hover:shadow-[0_0_35px_rgba(255,102,0,0.7)]
+            hover:scale-[1.03] active:scale-[0.98]
+            transition-all duration-300 cursor-pointer group"
+        >
+          <span>Read the Blog</span>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
       </div>
       <div className="w-full md:w-1/2 lg:w-5/12 flex-none mt-8 sm:mt-10 md:mt-0 flex justify-center md:justify-end md:absolute md:right-0 md:bottom-0">
         <img src={heroImg} alt="Cyberpunk Character" className="w-full max-w-sm md:max-w-none md:w-[120%] lg:w-[130%] h-auto object-contain mix-blend-lighten md:-translate-x-4 lg:translate-x-8" />

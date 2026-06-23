@@ -222,7 +222,7 @@ export default function CyberBlog({ onBack }) {
   ).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
-    <div className="w-full min-h-screen bg-black relative">
+    <div id="blog-section" className="w-full min-h-screen bg-black relative">
       {onBack && (
         <div className="absolute top-4 left-4 sm:top-6 sm:left-8 z-50">
           <button
