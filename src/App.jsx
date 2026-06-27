@@ -14,7 +14,7 @@ function Home() {
       <GreetSection />
       <UnveilSection />
       <DiveSection />
-      <AboutUs />
+
     </div>
   );
 }
