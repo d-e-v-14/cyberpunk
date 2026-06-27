@@ -1,7 +1,3 @@
-import LandingHero from "./components/LandingHero";
-import Hero from "./components/Hero";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HeroSection from "./pages/HeroSection";
@@ -9,6 +5,7 @@ import GreetSection from "./pages/GreetSection";
 import UnveilSection from "./pages/UnveilSection";
 import DiveSection from "./pages/DiveSection";
 import BlogSection from "./pages/BlogSection";
+import AboutUs from "./pages/AboutUs";
 
 function Home() {
   return (
@@ -17,6 +14,7 @@ function Home() {
       <GreetSection />
       <UnveilSection />
       <DiveSection />
+
     </div>
   );
 }
@@ -25,7 +23,7 @@ function PrivacyPolicy() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#050505] text-white p-6">
       <div className="max-w-2xl w-full bg-white/5 p-8 rounded-xl shadow-lg backdrop-blur">
-        <h1 className="text-3xl font-extrabold mb-4 text-gradient-neon">
+        <h1 className="text-3xl font-extrabold mb-4">
           Privacy Policy
         </h1>
         <p className="text-[#bababa]">
@@ -40,8 +38,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Home page */}
         <Route path="/" element={<Home />} />
+
+        {/* About page (optional separate route) */}
+        <Route path="/about" element={<AboutUs />} />
+
+        {/* Blog page */}
         <Route path="/blog" element={<BlogSection />} />
+
+        {/* Privacy page */}
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
