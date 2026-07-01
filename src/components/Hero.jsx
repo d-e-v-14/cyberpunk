@@ -27,13 +27,13 @@ function Hero() {
           cybernetic enhancements.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center lg:justify-start">
-          <button className="px-5 py-2 rounded-lg text-white text-[18px] bg-gradient-to-r from-[#f8961e] via-[#ff6b00] to-[#f94144] hover:-translate-y-[2px] transition-all duration-300">
+        <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center lg:justify-start items-center sm:items-start">
+          <button className="w-[180px] px-5 py-2 rounded-lg text-white text-[18px] bg-gradient-to-r from-[#f8961e] via-[#ff6b00] to-[#f94144] hover:-translate-y-[2px] transition-all duration-300">
             Read More
           </button>
 
-          <div className="inline-block p-[1.5px] bg-[linear-gradient(90deg,#ff4d00_0%,#ff7b00_45%,#ffd60a_100%)] hover:-translate-y-[2px] hover:scale-105 transition-all duration-300">
-            <button className="bg-black px-5 py-2 text-[#ff8c00] text-[18px] hover:text-white transition-all duration-300">
+          <div className="inline-block p-[1.5px] rounded-lg bg-[linear-gradient(90deg,#ff4d00_0%,#ff7b00_45%,#ffd60a_100%)] hover:-translate-y-[2px] transition-all duration-300">
+            <button className="w-[180px] bg-black px-5 py-2 rounded-lg text-white text-[18px]">
               Learn More
             </button>
           </div>

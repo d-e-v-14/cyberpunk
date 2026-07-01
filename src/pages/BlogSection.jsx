@@ -235,7 +235,9 @@ export default function CyberBlog({ onBack }) {
         </div>
       )}
 
-      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-16 sm:px-6 lg:flex-row lg:gap-16 lg:px-8 pt-24 sm:pt-32">
+
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-16 sm:px-6 lg:flex-row lg:gap-16 lg:px-8 pt-8 sm:pt-12">
+
         <Sidebar activeTopic={activeTopic} onTopicChange={setActiveTopic} />
 
         <main className="flex-1">

@@ -91,7 +91,7 @@ function useCanvas(canvasRef) {
         const draw = () => {
             ctx.clearRect(0, 0, W, H);
             // Grid
-            ctx.strokeStyle = "rgba(50,80,140,0.09)";
+            ctx.strokeStyle = "rgba(232,93,4,0.07)";
             ctx.lineWidth = 0.5;
             for (let x = 0; x < W; x += 70) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
             for (let y = 0; y < H; y += 70) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
@@ -107,7 +107,7 @@ function useCanvas(canvasRef) {
                 p.y += p.vy; p.x += p.vx;
                 if (p.y < -4) { p.y = H + 4; p.x = Math.random() * W; }
                 ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(100,180,255,${p.o})`; ctx.fill();
+                ctx.fillStyle = `rgba(232,93,4,${p.o})`; ctx.fill();
             });
             raf = requestAnimationFrame(draw);
         };
@@ -227,7 +227,7 @@ export default function AboutPage() {
                     style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden", background: "#000" }}
                 >
                     {/* Background layers */}
-                    <div style={{ position: "absolute", inset: 0, zIndex: 0, background: "radial-gradient(ellipse 80% 60% at 50% 40%, rgba(8,16,38,0.96) 0%, #000 100%)" }} />
+                    <div style={{ position: "absolute", inset: 0, zIndex: 0, background: "radial-gradient(ellipse 80% 60% at 50% 40%, rgba(15,15,15,0.96) 0%, #000 100%)"}} />
                     <div style={{
                         position: "absolute", inset: 0, zIndex: 1, opacity: 0.025,
                         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
@@ -235,7 +235,7 @@ export default function AboutPage() {
                     }}
                     />
                     <canvas ref={canvasRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", zIndex: 2, pointerEvents: "none" }} />
-                    <div style={{ position: "absolute", inset: 0, zIndex: 3, background: "radial-gradient(ellipse 55% 45% at 50% 50%, rgba(0,150,255,0.04) 0%, transparent 70%)", pointerEvents: "none" }} />
+                    <div style={{ position: "absolute", inset: 0, zIndex: 3, background: "radial-gradient(ellipse 55% 45% at 50% 50%, rgba(232,93,4,0.06) 0%, transparent 70%)", pointerEvents: "none" }} />
 
                     {/* Outer frame */}
                     <div style={{ position: "absolute", inset: "14px", border: "1px solid rgba(70,90,160,0.18)", pointerEvents: "none", zIndex: 5 }} />
